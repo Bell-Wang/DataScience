@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Bokeh  : Web interactive visualization using Python ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Bokeh </title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/Bell-Wang/DataScience">View on GitHub</a>
+
+          <h1 id="project_title">Bokeh </h1>
+          <h2 id="project_tagline">Web interactive visualization using Python </h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/Bell-Wang/DataScience/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/Bell-Wang/DataScience/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="welcome-to-bokeh" class="anchor" href="#welcome-to-bokeh" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to Bokeh!</h1>
+
+<p>In the class of Exploratory Data Analysis and Visualization (STATW4701, Spring 2015), Claire and I (Bella) choose <strong>Bokeh</strong> as In-class presentation topic. </p>
+
+<blockquote>
+<p>Bokeh is a Python interactive visualization library that target modern web browsers for presentation. Its goal is to provide &gt;elegant, concise construction of novel graphics in the style of D3.js, but also deliver this capability with high-&gt;performance interactivity over very large or streaming datasets. Bokeh can help anyone who would like to quickly and easily &gt;create interactive plots, dashboards, and data applications.</p>
+</blockquote>
+
+<p><em><strong>Here is our agenda and some notes on presentation:</strong></em>  </p>
+
+<h2>
+<a id="agenda" class="anchor" href="#agenda" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>Agenda</em>
+</h2>
+
+<p><strong>1.Introduction</strong><br>
+     --Bokeh set-up<br>
+     --features<br>
+ <strong>2.Demo plotting</strong><br>
+     --classification<br>
+     --animated/streaming plots<br>
+     --time series<br>
+     --periodic table<br>
+ <strong>3.Summary</strong><br>
+     --limits<br>
+     --roadmap</p>
+
+<h3>
+<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h3>
+
+<p><strong>Bokeh: Interactive, browser – based visualization library for big data, driven from Python.</strong></p>
+
+<p><em>Set up Bokeh from PyPI using pip:</em><br>
+<code>$ pip install bokeh</code></p>
+
+<h3>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h3>
+
+<ol>
+<li>Interactive visualizatio</li>
+<li>Web as first class interface target</li>
+<li>Novel, animated graphics</li>
+<li>No need to write JavaSript</li>
+</ol>
+
+<h3>
+<a id="some-demo-to-show-boheks-capability" class="anchor" href="#some-demo-to-show-boheks-capability" aria-hidden="true"><span class="octicon octicon-link"></span></a>Some Demo to show Bohek's capability</h3>
+
+<p>Periodic Table:
+<img src="http://bokeh.pydata.org/en/latest/docs/gallery/periodic.html" alt="periodic table"><br>
+Real-Time Streaming:<br>
+<img src="http://continuum.io/media/img/rssi_out.gif" alt="real-time streaming"><br>
+Dashboard-Like Applet:<br>
+<img src="http://bokeh.pydata.org/en/latest/_images/stocks_applet.png" alt="dashboard"><a href="http://104.236.246.80:5006/bokeh/doc/5f4e395d-03d0-4a9a-98fe-86af48c49e82/1ee86e0b-5b9d-41e4-8307-e864ffed8f8a?public=true">click to see animated graph</a> </p>
+
+<p><em>More example can be found <a href="http://bokeh.pydata.org/en/latest/docs/gallery.html#static-examples">here</a>!</em></p>
+
+<h3>
+<a id="summary" class="anchor" href="#summary" aria-hidden="true"><span class="octicon octicon-link"></span></a>Summary</h3>
+
+<p><strong><em>Creating plot with Bokeh is this easy!</em></strong> </p>
+
+<p><strong>Logic Workflow:</strong></p>
+
+<ol>
+<li>Prepare data<br>
+<code>x1 = [0, 1, 2, 3]</code><br>
+<code>y1 = [0, 8, 2, 4]</code><br>
+</li>
+<li>Direct location of output<br>
+<code>output_notebook()</code><br>
+</li>
+<li>Create figure and build plot<br>
+<code>p1 = figure(plot_width=300, plot_height=300)</code><br>
+<code>p1.line(x1, y1, size=12, color="red")</code> </li>
+<li>Show result<br>
+<code>show(p1)</code>
+</li>
+</ol>
+
+<h3>
+<a id="limits" class="anchor" href="#limits" aria-hidden="true"><span class="octicon octicon-link"></span></a>Limits</h3>
+
+<p>1.Bokeh server based animating plot<br>
+2.GIS support<br>
+... </p>
+
+<h3>
+<a id="roadmap" class="anchor" href="#roadmap" aria-hidden="true"><span class="octicon octicon-link"></span></a>Roadmap:</h3>
+
+<p><strong>0.8.0 Goals</strong><br>
+1. R language binding<br>
+2. CLI interface<br>
+3. blaze integration<br>
+4. more charts<br>
+...</p>
+
+<p><em>Our ppt. and coding files have been uploaded in separated folder.</em><br>
+<em>If you are interested in getting more information, please visit <a href="http://bokeh.pydata.org/en/latest/index.html">here</a>!</em></p>
+
+<h2>
+<a id="thank-you-smiley" class="anchor" href="#thank-you-smiley" aria-hidden="true"><span class="octicon octicon-link"></span></a>THANK YOU! <img class="emoji" title=":smiley:" alt=":smiley:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png" height="20" width="20" align="absmiddle">
+</h2>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Bokeh  maintained by <a href="https://github.com/Bell-Wang">Bell-Wang</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
